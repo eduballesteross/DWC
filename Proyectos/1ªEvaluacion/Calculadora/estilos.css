@@ -1,4 +1,19 @@
-body{
-    
-    align-items: center;
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
 }
