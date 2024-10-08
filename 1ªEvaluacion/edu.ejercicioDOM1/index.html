@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1 DOM</title>
+    <script>
+      function agregarParrafo() {
+        // 1 -Seleccionar el elemento HTML donde vamos a añadir el parrafo
+        let container = document.querySelector("#container");
+        // 2 -Crear el elemento HTML p
+        let p = document.createElement("p");
+        // 3 -Añadir el contenido (loren) al p
+        p.INN = "Este es mi parrafo";
+        // 4 Añadir el p al elemtno seleccionado en el paso 1
+        container.append(p);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="agregarParrafo()">Agregar Parrafo</button>
+    <div id="container"></div>
+
+    <script>
+          <!-- Ejercicio 2: Crea un boton que:
+      Le pida al usuario con prompt un articulo y lo añada a la lista.
+      -->
+      <button>Introduzca un articulo</button>
+    </script>
+
+    <!-- Ejercicio 3: Crea un boton que:
+     1- Crea el boton con el texto "Crea con estilo"
+     2- El botón llamará a la funcion creaConEstilo
+     3- Dicha funcion creará un div con tu nombre y apellidos
+     4- Con el texto en negrita
+    -->
+    <button>Crear con estilo.</button>
+  </body>
+</html>
